@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter Application</title>
+    <!-- Bootstrap 4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 50px;
+            background-color: rgb(255, 249, 249);
+            color: rgb(36, 68, 170);
+        }
+
+        .card-block {
+            padding: 5px 10px;
+            font-size: 20px;
+            color: white;
+        }
+
+        h4 {
+            font-weight: lighter;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- six col grid -->
+            <div class="col-md-6" style="margin:auto; width: 100%;">
+                <h1 class="display-5 text-center mb-3">
+                    Weight Converter
+                </h1>
+                <form action="">
+                    <div id="lbsInput" class="form-group">
+                        <input type="number" class=" form-control form-control-lg"
+                            placeholder="Enter pounds to convert...">
+
+                    </div>
+                </form>
+                <div id="output">
+                    <!-- mb-2 gives margin bottom -->
+                    <div class="card bg-primary  mb-2">
+                        <div class="card-block">
+                            <h4 class="ml-1">Grams:</h4>
+                            <div id="gramsOutput">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success  mb-2">
+                        <div class="card-block">
+                            <h4 class="ml-1">Kilograms: </h4>
+                            <div id="kgOutput">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger  mb-2">
+                        <div class="card-block">
+                            <h4 class="ml-1">Ounces:</h4>
+                            <div id="ozOutput">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary  mb-2">
+                        <div class="card-block">
+                            <h4 class="ml-1">Milligrams:</h4>
+                            <div id="mlOutput">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
